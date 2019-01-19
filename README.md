@@ -1,9 +1,6 @@
 # Dronology-documentation
 
 
-
-# Dronology
-
 ## Installation
 
 [Installing Python, Dronekit and SITL](http://....)
