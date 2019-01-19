@@ -10,7 +10,10 @@
 [Installing the Dronology (Java)](http://....)
 
 
+
 ## Setup
+
+[Distributed Setup](http://....)
 
 
 ## Run
