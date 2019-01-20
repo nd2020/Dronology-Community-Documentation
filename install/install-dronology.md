@@ -57,7 +57,7 @@ The Dronology-UI requires a servlet container (Tomcat, Jetty...) to run the Vaad
 1. To install and setup the GroundStation and the SITL Simulator continue [here](https://github.com/SAREC-Lab/Dronology-documentation/new/master/install/install-GCS.md)
 
 
-### Tips and Troubleshooting
+## Tips and Troubleshooting
 * If you plan to work with the source code, consider installing an IDE. Popular IDEs like [Eclipse](https://www.eclipse.org), [Netbeans](https://netbeans.org/downloads/) and [IntelliJ](https://www.jetbrains.com/idea/) all work well with maven projects like this one.
 
 * Sometimes it's necessary to run the project even if tests are failing. To force the Maven install command use:
