@@ -29,7 +29,7 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 
 We provide scripts for running Dronogy [shell script](http://) [tmux script](http://) and the 
-Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://
+Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
 ## Misc
 
 ### Docker Container
