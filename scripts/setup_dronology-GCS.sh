@@ -32,7 +32,7 @@ cd $REPOS_PARENT_DIR
 # makes the directory if it doesn't already exist
 mkdir $REPOS_DIR
 cd $REPOS_DIR
-git clone $REPO_URL
+git clone $REPO_URL $REPO_NAME
 cd $REPO_NAME
 git checkout $BRANCH
 cd ..
