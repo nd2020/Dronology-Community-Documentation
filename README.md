@@ -30,7 +30,7 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 ### Scripts: 
 
-We provide scripts for running Dronogy [shell script](http://) or [tmux script](http://) and the 
+We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh) and the 
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
 ## Misc
 
