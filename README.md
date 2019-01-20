@@ -23,7 +23,7 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 ## Run
 
-
+[Run Dronology](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/run/dronology.md)
 
 ## Misc
 
