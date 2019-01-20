@@ -35,6 +35,16 @@ Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script
 ## Misc
 
 ### Docker Container
+comming soon..
 
 ### VM Image
+
+We provide a fully configured VMWare and VirtualBox image.
+Dronology and GCS code can be found found in the /home/uav/git folder.
+To start Dronology execute the run-dronology.sh shell script on the Desktop.
+
+Please contact us for further information on the VM Image and the download link.
+
+
+
 
