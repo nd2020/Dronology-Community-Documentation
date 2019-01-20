@@ -46,6 +46,11 @@ git clone https://github.com/SAREC-Lab/Dronology-GCS-Community.git
 ```
 
 
+Lastly, install all Groundstation dependencies.
+```bash
+cd ~/git/Dronology-GCS-Community/multi_comm
+sudo pip install -r requirements.txt
+```
 
 ### Running
 Once you've [setup and started Dronology](https://github.com/SAREC-Lab/Dronology-Community/blob/2018_10/README.md), you can start the groundstation.
