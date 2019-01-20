@@ -1,5 +1,8 @@
 # Dronology Groundstation Setup
 
+If dronekit, SITL, and ardupilot is not installed, plese follow [this](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md) instructions first.
+
+
 These instructions have been tested using Ubuntu 14.04 and Ubuntu 16.04.
 
 ### Installation Instructions
