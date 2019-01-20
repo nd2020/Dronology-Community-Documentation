@@ -13,8 +13,7 @@ sudo pip install future pymavlink MAVProxy
 
 ---
 **NOTE**
-
-If you are using Ubuntu 16.04 or newer replace  'python-wxgtk2.8' with  'python-wxgtk3.0' !
+If you are running Ubuntu 16.04 or newer, replace  'python-wxgtk2.8' with  'python-wxgtk3.0' !
 
 ---
 
