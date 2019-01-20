@@ -37,23 +37,22 @@ sudo apt-get install git
 
 ### Setup
 
-Clone the Dronology repository.
+Clone the Dronology Groundstation repository.
 ```bash
 cd ~
 mkdir git
 cd git
-git clone https://github.com/SAREC-Lab/Dronology-GCS-Community.git
+git clone https://github.com/SAREC-Lab/[Dronology-GCS|Dronology-GCS-Community].git Dronology-GCS
 ```
-
 
 Lastly, install all Groundstation dependencies.
 ```bash
-cd ~/git/Dronology-GCS-Community/multi_comm
+cd ~/git/Dronology-GCS/multi_comm
 sudo pip install -r requirements.txt
 ```
 
 ### Running
-Once you've [setup and started Dronology](https://github.com/SAREC-Lab/Dronology-Community/blob/2018_10/README.md), you can start the groundstation.
+Once you've [setup and started Dronology](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/README.md), you can start the groundstation.
 
 ```bash
 cd ~/git/Dronology-GCS-Community/multi_comm/src
@@ -69,13 +68,13 @@ All command line arguments have default values.
 
 You can also use the GCS UI: 
 ```bash
-cd ~/git/Dronology-GCS-Community/multi_comm/src
+cd ~/git/Dronology-GCS/multi_comm/src
 python main_ui.py
 ```
 
 
 ### Configuring Simulations
-For now, you configure the vehicles (drones) for a simulation using a JSON configuration file. Some sample configuration files are located in _~/git/Dronology-GCS-Community/multi_comm/cfg/drone_cfgs_ e.g., _default.json_:
+For now, you configure the vehicles (drones) for a simulation using a JSON configuration file. Some sample configuration files are located in _~/git/Dronology-GCS/multi_comm/cfg/drone_cfgs_ e.g., _default.json_:
 ```json
 [
   {
@@ -93,7 +92,7 @@ For now, you configure the vehicles (drones) for a simulation using a JSON confi
 ```
 Each JSON entry corresponds to a single drone. For simulations, the only necessary fields are "vehicle_type" (VRTL) and "home" (the starting latitude and longitude of the drone). 
 
-Before running a simulation, you must also modify the ardupath specified in _~/git/Dronology-GCS-Community/multi_comm/cfg/global_cfg.json_:
+Before running a simulation, you must also modify the ardupath specified in _~/git/Dronology-GCS/multi_comm/cfg/global_cfg.json_:
 
 ```json
 {
