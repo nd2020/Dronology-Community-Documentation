@@ -30,7 +30,7 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 ### Scripts: 
 
-We provide scripts for running Dronogy [shell script](http://) [tmux script](http://) and the 
+We provide scripts for running Dronogy [shell script](http://) or [tmux script](http://) and the 
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
 ## Misc
 
