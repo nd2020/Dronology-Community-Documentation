@@ -30,9 +30,4 @@ sim_vehicle.py -w -j4
 ```
 Once everything is built you can kill the process (ctrl+c).
 
-Lastly, install all Groundstation dependencies.
-```bash
-cd ~/git/Dronology-GCS-Community/multi_comm
-sudo pip install -r requirements.txt
-```
 
