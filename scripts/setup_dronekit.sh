@@ -1,4 +1,3 @@
-
 #! /bin/bash
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 # Clone the Ardupilot Repository

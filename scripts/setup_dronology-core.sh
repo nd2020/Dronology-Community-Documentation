@@ -7,15 +7,15 @@
 # will fail and/or result in unexpected behavior if parent directory does not exist or is not an absolute path!
 export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
-export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology.git
+export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community.git
 
 
-export DRONOLOGY_REPO_NAME=Dronology-Community
-export DRONOLOGY_BRANCH=master
+export DRONOLOGY_REPO_NAME=Dronology
+export DRONOLOGY_BRANCH=2018_10
 
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 
-echo "Using $DRONOLOGY_REPO_NAME - branch: $BRANCH from $DRONOLOGY_BRANCH" 
+echo "Using $DRONOLOGY_REPO_URL - branch: $BRANCH from $DRONOLOGY_BRANCH" 
 
 
 #install maven
@@ -30,7 +30,7 @@ mkdir $REPOS_DIR
 cd $REPOS_DIR
 
 
-git clone $DRONOLOGY_REPO_URL
+git clone $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAME
 cd $DRONOLOGY_REPO_NAME
 git checkout $DRONOLOGY_BRANCH
 cd ..
