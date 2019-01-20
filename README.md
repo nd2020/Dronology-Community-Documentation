@@ -15,7 +15,7 @@ The [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation
 
 
 
-WE provide shell scripts for installing Dronekit and SITL [setup_dronekit.sh](http://), installing the Dronology-GCS [setup_dronology_GCS.sh](http://), and installing the Dronology Core [setup_dronology_core.sh](http://) in Linux (tested in Ubuntu 16 and 18)
+WE provide shell scripts for installing Dronekit and SITL [setup_dronekit.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronekit.sh), installing the Dronology-GCS [setup_dronology_GCS.sh](http://), and installing the Dronology Core [setup_dronology_core.sh](http://) in Linux (tested in Ubuntu 16 and 18)
 
 ## Setup
 
