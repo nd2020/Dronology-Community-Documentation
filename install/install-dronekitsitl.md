@@ -10,6 +10,15 @@ Install a few ArduPilot dependencies.
 sudo apt-get install python-matplotlib python-serial python-wxgtk2.8 python-wxtools python-lxml
 sudo pip install future pymavlink MAVProxy
 ```
+
+---
+**NOTE**
+
+If you are using Ubuntu 16.04 or newer replace  'python-wxgtk2.8' with  'python-wxgtk3.0' !
+
+---
+
+
 Temporarily add some directories to your search path (to make this permanent, add these lines to ~/.bashrc). _Note: if you did not clone ardpilot into ~/git you will need to modify the first line to point to the correct location._
 ```bash
 export PATH=$PATH:$HOME/git/ardupilot/Tools/autotest
