@@ -68,3 +68,33 @@ cd ~/git/Dronology-GCS-Community/multi_comm/src
 python main_ui.py
 ```
 
+
+### Configuring Simulations
+For now, you configure the vehicles (drones) for a simulation using a JSON configuration file. Some sample configuration files are located in _~/git/Dronology-GCS-Community/multi_comm/cfg/drone_cfgs_ e.g., _default.json_:
+```json
+[
+  {
+    "rtk_enabled": "false" ,
+    "vehicle_id" : "VIRT1",
+    "comm_modules": {
+      "dronekit": {
+        "ardupath": "/home/bayley/git/ardupilot",
+        "home": [41.714775, -86.238825],
+        "vehicle_type": "VRTL"
+      }
+    }
+ }
+]
+```
+Each JSON entry corresponds to a single drone. For simulations, the only necessary fields are "vehicle_type" (VRTL) and "home" (the starting latitude and longitude of the drone). 
+
+Before running a simulation, you must also modify the ardupath specified in _~/git/Dronology-GCS-Community/multi_comm/cfg/global_cfg.json_:
+
+```json
+{
+  "ardupath": "/home/bayley/git/ardupilot"
+}
+```
+
+This should point to your cloned copy of ArduPilot.
+
