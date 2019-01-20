@@ -13,7 +13,7 @@ The [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronol
 The [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronology.md)
 
 
-
+### Scripts: 
 
 We provide shell scripts for installing Dronekit and SITL [setup_dronekit.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronekit.sh), installing the 
 Dronology-GCS [setup_dronology_GCS.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronology-GCS.sh), and installing the
@@ -27,6 +27,8 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 [Run Dronology](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/run/dronology.md)
 
+
+### Scripts: 
 
 We provide scripts for running Dronogy [shell script](http://) [tmux script](http://) and the 
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
