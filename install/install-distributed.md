@@ -9,7 +9,7 @@ TODO: add architecture figure,
 
 ### Configure GCS
 
-By default, the GCS connects to Dronology @localhost via port 1234.
+By default, the GCS connects to Dronology via a socket connection @localhost via port 1234.
 
 
 ```bash
@@ -22,3 +22,13 @@ By changing the -addr parameter a different location can be selected
 * _addr_ the address that dronology is running on (default: localhost)
 * _p_ the port that dornology is running on (default: 1234)
 
+
+### Dronology UI
+
+By default, the GCS Vaadin UI to Dronology via Java RMI @localhost via port 9779
+This is configured in [edu.nd.dronology.ui.vaadin.start.MainUI](https://github.com/SAREC-Lab/Dronology-Community/blob/2018_10/edu.nd.dronology.ui.vaadin/src/main/java/edu/nd/dronology/ui/vaadin/start/MyUI.java)
+
+```bash
+provider.init("localhost", 9779);
+```
+	
