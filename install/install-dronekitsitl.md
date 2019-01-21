@@ -1,4 +1,4 @@
-# Ardupilot, Dronekit, SITL Setup
+# Ardupilot, Dronekit, SITL Installation
 
 Clone the ArduPilot repository.
 ```bash
