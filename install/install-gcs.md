@@ -1,4 +1,4 @@
-# Dronology Groundstation Setup
+# Dronology Groundstation Installation
 
 If dronekit, SITL, and ardupilot is not installed, plese follow [this](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md) instructions first.
 
