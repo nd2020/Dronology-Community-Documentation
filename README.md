@@ -47,4 +47,17 @@ Please contact us for further information on the VM Image and the download link.
 
 
 
+### Quick Installation Guide:
+
+Please check the scripts before running and adapt target installation locations if necessary!
+
+1. Clone this repository
+1. run ```setup_dronekit.sh``` in scripts Folder
+1. run ```setup_dronology_GCS.sh``` in scripts Folder
+1. run ```setup_dronology_core.sh``` in scripts Folder
+1. run ```mvn clean```  in Dronology folder
+1. run ```mvn install``` in Dronology folder
+1. run ```run_dronology.sh``` or ```scripts/run_dronology_tmux.sh``` in scripts Folder
+
+
 
