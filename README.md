@@ -13,6 +13,17 @@ is requried to run the Groundcontrol Station and simulate Virtual UAVs using the
 * The [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronology.md)
 
 
+___
+**Before running the install scripts please make sure that you change the variables accordingly!!**
+___
+
+* REPOS_DIR: the (relative) local directoy the repository will be cloned to (default: git).
+* REPOS_PARENT_DIR: the parent folder of the git directoy the repository will be cloned to (default: $HOME, i.e., /home/username).
+* REPO_URL The URL of the github repo (usually does not need to be changed).
+* REPO_NAME The name of the repository
+* BRANCH: The branch to use.
+
+
 ### Scripts: 
 
 We provide shell scripts for installing Dronekit and SITL [setup_dronekit.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronekit.sh), installing the 
