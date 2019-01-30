@@ -6,12 +6,14 @@ Dronolgoy consists of 3 different parts: the (1) Dronology-Core, (2) the Dronolo
 ## Dronology-Core
     
 In a terminal, run Dronology:
-    ```bash
+
     cd /path/to/Dronology/edu.nd.dronology.services.launch
     mvn exec:java
-    ```
-    This runs until you stop it with Ctrl + C.
     
+    
+This runs until you stop it with Ctrl + C. 
+
+
 	
 ## Dronology-UI
 
