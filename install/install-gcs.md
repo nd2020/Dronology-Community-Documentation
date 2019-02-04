@@ -5,14 +5,14 @@ If dronekit, SITL, and ardupilot is not installed, plese follow [this](https://g
 
 These instructions have been tested using Ubuntu 14.04 and Ubuntu 16.04.
 
-### Installation Instructions
+## Installation Instructions
 
 The GCS can either be installed manually or via the setup script (setup_gcs.sh).  
 For manual installation follow the steps described in the readme.  
 When using the setup script, update the path variables before running the script to enusre that the GCS and ardupilot are installed at the right location.
 
 
-### Prerequisites
+## Prerequisites
 
 Ensure you have Python 2.7 installed.
 
@@ -38,7 +38,7 @@ Lastly, make sure [git](https://git-scm.com/) is installed.
 sudo apt-get install git
 ```
 
-### Setup
+## Setup
 
 Clone the Dronology Groundstation repository.
 ```bash
@@ -54,4 +54,10 @@ cd ~/git/Dronology-GCS/multi_comm
 sudo pip install -r requirements.txt
 ```
 
+## Tips and Troubleshooting
 
+If you are unable to connect to USB dongle due do  permissions denied, the user needs to be added to the respective usergroup: 
+
+```bash
+sudo usermod -a -G dialout $USER
+```
