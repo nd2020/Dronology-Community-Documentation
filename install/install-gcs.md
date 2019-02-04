@@ -56,7 +56,7 @@ sudo pip install -r requirements.txt
 
 ## Tips and Troubleshooting
 
-If you are unable to connect to USB dongle due do  permissions denied, the user needs to be added to the respective usergroup: 
+* If you are unable to connect to USB dongle due do  permissions denied, the user needs to be added to the respective usergroup: 
 
 ```bash
 sudo usermod -a -G dialout $USER
