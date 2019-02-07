@@ -14,7 +14,7 @@ The following directions explain how to setup your computer as a development mac
 
 1. Clone the project:
    ```bash
-   git clone git@github.com:SAREC-Lab/[Dronology|Dronology-Community].git Dronology
+   git clone git@github.com:SAREC-Lab/[Dronology|Dronology-Community-Core].git Dronology
    ```
 
 1. Build, test, package, and install the project in your local Maven repository:
