@@ -1,17 +1,5 @@
 # Dronology Documentation
 
-### Quick Installation Guide:
-
-Please check the scripts before running and adapt target installation locations if necessary!
-
-1. Clone this repository
-1. run ```setup_dronekit.sh``` in scripts Folder
-1. run ```setup_dronology-GCS.sh``` in scripts Folder
-1. run ```setup_dronology-core.sh``` in scripts Folder
-1. run ```mvn clean```  in Dronology folder
-1. run ```mvn install``` in Dronology folder
-1. run ```run_dronology.sh``` or ```scripts/run_dronology_tmux.sh``` in scripts Folder
-
 
 ## Installation
 
@@ -42,7 +30,6 @@ ___
 * BRANCH: The branch to use.
 
 
-
 ## Setup
 Per default Dronology is configured to run on a single machine. If either the Dronology UI and/or the Dronology GCS are supposed to run on a different machine please follow these instructions: [Distributed Setup](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-distributed.md)
 
@@ -57,6 +44,23 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh) (requires tmux 2.6 or higher) and the 
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
 ## Misc
+
+
+
+### Quick Installation Guide:
+
+Please check the scripts before running and adapt target installation locations if necessary!
+
+1. Clone this repository
+1. run ```setup_dronekit.sh``` in scripts Folder
+1. run ```setup_dronology-GCS.sh``` in scripts Folder
+1. run ```setup_dronology-core.sh``` in scripts Folder
+1. run ```mvn clean```  in Dronology folder
+1. run ```mvn install``` in Dronology folder
+1. run ```run_dronology.sh``` or ```scripts/run_dronology_tmux.sh``` in scripts Folder
+
+
+
 
 ### Docker Container
 comming soon..
