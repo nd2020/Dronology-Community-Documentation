@@ -45,7 +45,7 @@ We provide scripts for running Dronogy [shell script](https://github.com/SAREC-L
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
 
 
-
+## Misc
 
 ### Quick Installation Guide:
 
@@ -60,7 +60,7 @@ Please check the scripts before running and adapt target installation locations 
 1. run ```run_dronology.sh``` or ```scripts/run_dronology_tmux.sh``` in scripts Folder
 
 
-## Misc
+
 
 ### Docker Container
 comming soon..
