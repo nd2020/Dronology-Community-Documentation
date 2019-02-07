@@ -45,7 +45,7 @@ Clone the Dronology Groundstation repository.
 cd ~
 mkdir git
 cd git
-git clone https://github.com/SAREC-Lab/[Dronology-GCS|Dronology-GCS-Community].git Dronology-GCS
+git clone https://github.com/SAREC-Lab/[Dronology-GCS|Dronology-Community-GCS].git Dronology-GCS
 ```
 
 Lastly, install all Groundstation dependencies.
