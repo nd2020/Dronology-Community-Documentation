@@ -6,7 +6,7 @@
 # will fail and/or result in unexpected behavior if parent directory does not exist or is not an absolute path!
 export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
-export REPO_URL=https://github.com/SAREC-Lab/Dronology-GCS.git
+export REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-GCS.git
 export REPO_NAME=Dronology-GCS
 export BRANCH=integration
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
