@@ -7,7 +7,7 @@
 # will fail and/or result in unexpected behavior if parent directory does not exist or is not an absolute path!
 export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
-export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community.git
+export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-Core.git
 
 
 export DRONOLOGY_REPO_NAME=Dronology
