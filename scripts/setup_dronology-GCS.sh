@@ -9,6 +9,7 @@ export REPOS_DIR=git
 export REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-GCS.git
 export REPO_NAME=Dronology-GCS
 export BRANCH=integration
+export ARDUPILOT_DIR="$REPOS_PARENT_DIR/$REPOS_DIR/ardupilot"
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 
 echo "Using $REPO_NAME - branch: $BRANCH from $REPO_URL" 
@@ -48,3 +49,18 @@ fi
 echo "Linux Version is: $CURR_VER -- wxgtk $WXGTK_VERSION needs to be installed"
 sudo apt-get install --yes python-dev python-opencv python-wxgtk$WXGTK_VERSION python-pip python-matplotlib python-pygame python-lxml
 sudo pip install future pymavlink MAVProxy
+
+# Modify the global_cfg.json file so the GCS knows where ardupilot is installed
+cat <<EOF | python -
+import json
+cfg_file="$REPOS_PARENT_DIR/$REPOS_DIR/$REPO_NAME/multi_comm/cfg/global_cfg.json"
+ardu_dir="$ARDUPILOT_DIR"
+data=""
+with open(cfg_file, 'r') as f:
+    data=f.read()
+cfg_obj = json.loads(data)
+cfg_obj['ardupath'] = ardu_dir
+out_data=json.dumps(cfg_obj, indent=4, sort_keys=True)
+with open(cfg_file, 'w') as f:
+    f.write(out_data)
+EOF
