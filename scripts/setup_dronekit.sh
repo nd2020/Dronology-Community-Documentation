@@ -19,16 +19,15 @@ function version_ge() { test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)"
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
-sudo apt-get install python2.7
+sudo apt-get install --yes python2.7
 # install pip
-sudo apt-get install python-pip
+sudo apt-get install --yes python-pip
 # install git
-sudo apt-get install git
+sudo apt-get install --yes git
 
-cd $REPOS_PARENT_DIR
 # makes the directory if it doesn't already exist
-mkdir $REPOS_DIR
-cd $REPOS_DIR
+mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
+cd "$REPOS_PARENT_DIR/$REPOS_DIR"
 
 # Clone the ArduPilot repository.
 git clone git://github.com/ArduPilot/ardupilot.git
@@ -42,7 +41,7 @@ else
 export WXGTK_VERSION=2.8
 fi
 echo "Linux Version is: $CURR_VER -- wxgtk $WXGTK_VERSION needs to be installed"
-sudo apt-get install python-dev python-opencv python-wxgtk$WXGTK_VERSION python-pip python-matplotlib python-pygame python-lxml
+sudo apt-get  install --yes python-dev python-opencv python-wxgtk$WXGTK_VERSION python-pip python-matplotlib python-pygame python-lxml
 sudo pip install future pymavlink MAVProxy
 
 # Build SITL
