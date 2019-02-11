@@ -4,10 +4,10 @@ export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\
 
 
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
-REPO=/home/uav/git/Dronology
+REPO="$HOME/git/Dronology"
 server=edu.nd.dronology.services.launch
 vaadin=edu.nd.dronology.ui.vaadin
-GCS=/home/uav/git/Dronology-GCS/multi_comm/src
+GCS="$HOME/git/Dronology-GCS/multi_comm/src"
 ################################### ################################# ################################
 
 
