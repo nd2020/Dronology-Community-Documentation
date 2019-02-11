@@ -20,7 +20,7 @@ echo "Using $DRONOLOGY_REPO_URL - branch: $BRANCH from $DRONOLOGY_BRANCH"
 export CURR_VER=`lsb_release -rs`
 if [ "${CURR_VER/.}" -lt "1604" ]
 then
-    sudo add-apt-repository ppa:openjdk-r/ppa
+    sudo add-apt-repository --yes ppa:openjdk-r/ppa
 fi
 sudo apt-get update
 sudo apt install --yes openjdk-8-jdk maven
