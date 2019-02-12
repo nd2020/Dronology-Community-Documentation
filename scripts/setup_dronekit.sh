@@ -26,6 +26,7 @@ sudo apt-get install --yes python-pip
 sudo apt-get install --yes git
 
 sudo apt-get install python-setuptools --yes
+sudo apt-get install build-essential --yes
 
 # makes the directory if it doesn't already exist
 mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
