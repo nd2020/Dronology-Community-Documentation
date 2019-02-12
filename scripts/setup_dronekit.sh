@@ -25,6 +25,8 @@ sudo apt-get install --yes python-pip
 # install git
 sudo apt-get install --yes git
 
+sudo apt-get install python-setuptools --yes
+
 # makes the directory if it doesn't already exist
 mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
 cd "$REPOS_PARENT_DIR/$REPOS_DIR"
