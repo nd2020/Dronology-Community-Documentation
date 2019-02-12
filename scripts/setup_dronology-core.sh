@@ -9,7 +9,6 @@ export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
 export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-Core.git
 
-
 export DRONOLOGY_REPO_NAME=Dronology
 export DRONOLOGY_BRANCH=2018_10
 
@@ -17,18 +16,18 @@ export DRONOLOGY_BRANCH=2018_10
 
 echo "Using $DRONOLOGY_REPO_URL - branch: $BRANCH from $DRONOLOGY_BRANCH" 
 
-
 #install maven
-sudo add-apt-repository ppa:openjdk-r/ppa
+export CURR_VER=`lsb_release -rs`
+if [ "${CURR_VER/.}" -lt "1604" ]
+then
+    sudo add-apt-repository --yes ppa:openjdk-r/ppa
+fi
 sudo apt-get update
-sudo apt install openjdk-8-jdk maven
+sudo apt install --yes openjdk-8-jdk maven
 
-
-cd $REPOS_PARENT_DIR
 # makes the directory if it doesn't already exist
-mkdir $REPOS_DIR
-cd $REPOS_DIR
-
+mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
+cd "$REPOS_PARENT_DIR/$REPOS_DIR"
 
 git clone $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAME
 cd $DRONOLOGY_REPO_NAME
