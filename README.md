@@ -41,8 +41,10 @@ Per default Dronology is configured to run on a single machine. If either the Dr
 
 ### Scripts: 
 
-We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh) (requires tmux 2.6 or higher) and the 
+We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) which only runs Dronology or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh)  which runs both Dronology and the Groundstation UI  (requires tmux 2.6 or higher) and the 
 Dronology Groundstation [GCS-UI shell script](http://), [GCS Runner shell script](http://)
+
+
 
 
 ## Misc
@@ -57,7 +59,7 @@ Please check the scripts before running and adapt target installation locations 
 1. run ```setup_dronology-core.sh``` in scripts Folder
 1. run ```mvn clean```  in Dronology folder
 1. run ```mvn install``` in Dronology folder
-1. run ```run_dronology.sh``` or ```scripts/run_dronology_tmux.sh``` in scripts Folder
+1. run ```run_dronology.sh``` and ```run_dronology-gcs_ui.sh``  or ```scripts/run_dronology_tmux.sh``` in scripts Folder
 
 
 
