@@ -8,7 +8,7 @@ export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
 export REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-GCS.git
 export REPO_NAME=Dronology-GCS
-export BRANCH=integration
+export BRANCH=2019_02
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 
 echo "Using $REPO_NAME - branch: $BRANCH from $REPO_URL" 
