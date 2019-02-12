@@ -10,7 +10,7 @@ export REPOS_DIR=git
 export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-Core.git
 
 export DRONOLOGY_REPO_NAME=Dronology
-export DRONOLOGY_BRANCH=2018_10
+export DRONOLOGY_BRANCH=2019_02
 
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 
