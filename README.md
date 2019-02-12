@@ -59,7 +59,7 @@ Please check the scripts before running and adapt target installation locations 
 1. run ```setup_dronology-core.sh``` in scripts Folder
 1. run ```mvn clean```  in Dronology folder
 1. run ```mvn install``` in Dronology folder
-1. run ```run_dronology.sh``` and ```run_dronology-gcs_ui.sh``  or ```scripts/run_dronology_tmux.sh``` in scripts Folder
+1. run ```run_dronology.sh``` and ```run_dronology-gcs_ui.sh```  or ```scripts/run_dronology_tmux.sh``` in scripts Folder
 
 
 
