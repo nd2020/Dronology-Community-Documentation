@@ -20,7 +20,7 @@ function version_ge() { test "$(echo "$@" | tr " " "\n" | sort -rV | head -n 1)"
 
 # install python
 sudo apt-get install --yes software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
+sudo add-apt-repository --yes ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt-get install --yes python2.7
 # install pip
