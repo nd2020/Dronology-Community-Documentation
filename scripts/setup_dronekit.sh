@@ -48,4 +48,29 @@ sudo pip install future pymavlink MAVProxy
 export PATH=$PATH:$REPOS_PARENT_DIR/$REPOS_DIR/ardupilot/Tools/autotest
 export PATH=/usr/lib/ccache:$PATH
 cd ArduCopter
-sim_vehicle.py -w -j4
+SIM_VEHICLE=`which sim_vehicle.py`
+
+cat << EOF | python
+import os, re, signal, subprocess, sys
+
+def run_until_readline_match(pargs, workdir, pattern):
+    PIPE = subprocess.PIPE
+    process = subprocess.Popen(pargs, cwd=workdir, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True, preexec_fn=os.setsid)
+    outstream = process.stdout
+    line = outstream.readline()
+    sys.stdout.write(line)
+    sys.stdout.flush()
+    while not pattern.match(line):
+        line = outstream.readline()
+        sys.stdout.write(line)
+        sys.stdout.flush()
+    os.killpg(process.pid, signal.SIGTERM)
+
+run_until_readline_match(
+    ["$SIM_VEHICLE", '-w', '-j4'],
+    "$PWD",
+    re.compile("^'build' finished successfully \(\d*\.?\d*s?\)\s*\r?\n?$")
+)
+EOF
+
+echo 'done'
