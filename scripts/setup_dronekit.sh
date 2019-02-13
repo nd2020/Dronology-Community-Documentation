@@ -69,7 +69,7 @@ def run_until_readline_match(pargs, workdir, pattern):
 run_until_readline_match(
     ["$SIM_VEHICLE", '-w', '-j4'],
     "$PWD",
-    re.compile("^'build' finished successfully \(\d*\.?\d*s?\)\s*\r?\n?$")
+    re.compile("^'build' finished successfully \([^\)]*\)\s*\r?\n?$")
 )
 EOF
 
