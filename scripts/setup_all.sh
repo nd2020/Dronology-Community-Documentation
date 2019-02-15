@@ -192,3 +192,16 @@ git clone -b $DRONOLOGY_BRANCH --single-branch  $DRONOLOGY_REPO_URL $DRONOLOGY_R
 cd $DRONOLOGY_REPO_NAME
 git checkout $DRONOLOGY_BRANCH
 cd ..
+
+echo '################################################################################'
+echo final tasks
+echo '################################################################################'
+
+cd "$REPOS_PARENT_DIR/$REPOS_DIR/$DRONOLOGY_REPO_NAME"
+mvn clean
+mvn install
+
+sudo apt install --yes tmux
+
+cd "$REPOS_PARENT_DIR/$REPOS_DIR"
+git clone https://github.com/SAREC-Lab/Dronology-Community-Documentation.git
