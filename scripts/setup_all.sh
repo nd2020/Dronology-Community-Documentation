@@ -94,7 +94,7 @@ echo '##########################################################################
 # will fail and/or result in unexpected behavior if parent directory does not exist or is not an absolute path!
 export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
-export REPO_URL=git@github.com:SAREC-Lab/Dronology-Community-GCS.git
+export REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-GCS.git
 export REPO_NAME=Dronology-GCS
 export BRANCH=2019_02
 export ARDUPILOT_DIR="$REPOS_PARENT_DIR/$REPOS_DIR/ardupilot"
@@ -157,6 +157,7 @@ EOF
 echo '################################################################################'
 echo core setup 
 echo '################################################################################'
+
 #! /bin/bash
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 # Clone the Dronology Repository
@@ -165,7 +166,7 @@ echo '##########################################################################
 # will fail and/or result in unexpected behavior if parent directory does not exist or is not an absolute path!
 export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
-export DRONOLOGY_REPO_URL=igit@github.com:SAREC-Lab/Dronology-Community-Core.git
+export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-Core.git
 
 export DRONOLOGY_REPO_NAME=Dronology
 export DRONOLOGY_BRANCH=2019_02
