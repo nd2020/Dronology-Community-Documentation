@@ -8,7 +8,7 @@ export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
 export REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-GCS.git
 export REPO_NAME=Dronology-GCS
-export BRANCH=integration
+export BRANCH=2019_02
 export ARDUPILOT_DIR="$REPOS_PARENT_DIR/$REPOS_DIR/ardupilot"
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
 
@@ -32,7 +32,7 @@ sudo apt-get install --yes python-qt4
 # makes the directory if it doesn't already exist
 mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
 cd "$REPOS_PARENT_DIR/$REPOS_DIR"
-git clone $REPO_URL $REPO_NAME
+git clone -b $BRANCH --single-branch  $REPO_URL $REPO_NAME
 cd $REPO_NAME
 git checkout $BRANCH
 cd ..
