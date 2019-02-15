@@ -29,7 +29,7 @@ sudo apt install --yes openjdk-8-jdk maven
 mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
 cd "$REPOS_PARENT_DIR/$REPOS_DIR"
 
-git clone -b $DRONOLOGY_BRANCH --single-branch  $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAM
+git clone -b $DRONOLOGY_BRANCH --single-branch  $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAME
 cd $DRONOLOGY_REPO_NAME
 git checkout $DRONOLOGY_BRANCH
 cd ..
