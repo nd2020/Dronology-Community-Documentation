@@ -6,7 +6,7 @@
 Setting up and Installing Dronology requires 3 different parts to be installed: 
 
 * [Python, Dronekit and SITL](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md)
-is requried to run the Groundcontrol Station and simulate Virtual UAVs using the [Ardupilot](http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) Software-in-the-Loop SITL simulator
+are requried to run the Groundcontrol Station and simulate Virtual UAVs using the [Ardupilot](http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) Software-in-the-Loop SITL simulator
 
 * The [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-gcs.md)
 
@@ -40,7 +40,11 @@ Dronology Groundstation [GCS-UI shell script](scripts/run_dronology-GCS_ui.sh), 
 
 ## Installation Methods
 
-There are three ways to install Dronology. The quick installation method is best for those who want convenience and don't mind the default settings. The custom installation method is best for people who want to specify where Dronology gets installed but who also want some automation. Finally, our manual installation guides are best for those who want to dig into the details as they walk you through every step so you can see exactly what's going on.
+There are three ways to install Dronology.
+
+* The [Quick Installation Guide](#quick-installation-guide) is well suited for those who want convenience and don't mind the defaults.
+* The [Custom Installation Guide](#custom-installation-guide) is appropriate for people who want to specify some of the installation details while leveraging our scripts to automate much of the procedure.
+* The [Manual Installation Guide](#manual-installation-guide) is best for those who want to dig into the details as it walks you through every step so you can see exactly what's going on.
 
 > Note: the quick and custom methods use setup scripts that automate the manual installation instructions.
 
@@ -64,14 +68,10 @@ This method lets you customize:
 * Where the ground control station gets installed as well as the repo and branch that gets cloned
 * Where dronology-core gets installed as well as the repo and branch that gets cloned
 
-
-
-
-
 To install Dronology with these customizations:
 
 1. Clone this repository
-1. Modify the variables at the begining of `setup_dronekit.sh`, `setup_dronology-GCS.sh`, and `setup_dronology-core.sh` in the scripts folder
+1. Modify the variables at the begining of `setup_dronekit.sh`, `setup_dronology-GCS.sh`, and `setup_dronology-core.sh` in the scripts folder. Here is what the variables mean:
 
     ___
     **Before running the install scripts please make sure that you change the variables accordingly!**
@@ -94,6 +94,10 @@ You're now ready to run Dronology.
 
 
 ### Manual Installation Guide
+
+1. Set up [Python, Dronekit and SITL](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md).
+1. Set up the [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-gcs.md)
+1. Set up [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronology.md)
 
 ## Misc
 
