@@ -65,7 +65,7 @@ Please check the scripts before running and adapt target installation locations 
 
 
 ### Docker Container
-comming soon..
+coming soon..
 
 ### VM Image
 
