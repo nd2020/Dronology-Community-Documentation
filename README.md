@@ -64,9 +64,9 @@ Once it completes, you're ready to run Dronology.
 
 This method lets you customize:
 
-* Where Ardupilot gets installed
-* Where the ground control station gets installed as well as the repo and branch that gets cloned
-* Where dronology-core gets installed as well as the repo and branch that gets cloned
+* Where Ardupilot gets installed.
+* Where the ground control station gets installed, as well as the repo that gets cloned and the branch that gets checked out.
+* Where dronology-core gets installed as well as the repo that gets cloned and the branch that gets checked out.
 
 To install Dronology with these customizations:
 
