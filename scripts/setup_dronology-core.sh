@@ -9,7 +9,7 @@ export REPOS_PARENT_DIR=$HOME
 export REPOS_DIR=git
 export DRONOLOGY_REPO_URL=https://github.com/SAREC-Lab/Dronology-Community-Core.git
 
-export DRONOLOGY_REPO_NAME=Dronology
+export DRONOLOGY_REPO_NAME=Dronology-Core
 export DRONOLOGY_BRANCH=2019_02
 
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
@@ -29,7 +29,7 @@ sudo apt install --yes openjdk-8-jdk maven
 mkdir -p "$REPOS_PARENT_DIR/$REPOS_DIR"
 cd "$REPOS_PARENT_DIR/$REPOS_DIR"
 
-git clone -b $DRONOLOGY_BRANCH --single-branch  $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAM
+git clone -b $DRONOLOGY_BRANCH --single-branch  $DRONOLOGY_REPO_URL $DRONOLOGY_REPO_NAME
 cd $DRONOLOGY_REPO_NAME
 git checkout $DRONOLOGY_BRANCH
 cd ..
