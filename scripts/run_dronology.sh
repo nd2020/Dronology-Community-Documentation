@@ -1,7 +1,7 @@
 #! /bin/bash
 #cd "$(dirname "$(realpath "$0")")"
 ################################ MODIFY DRONOLOGY REPO PARAMETERS HERE ##############################
-REPO="$HOME/git/Dronology"
+REPO="$HOME/git/Dronology-Core"
 server=edu.nd.dronology.services.launch
 vaadin=edu.nd.dronology.ui.vaadin
 ################################
