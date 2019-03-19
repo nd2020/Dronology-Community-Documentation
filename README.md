@@ -1,50 +1,26 @@
-# Dronology Documentation
+# Dronology Documentation  
 
 
-## Installation
+## Overview
 
-Setting up and Installing Dronology requires 3 different parts to be installed: 
-
-* [Python, Dronekit and SITL](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md)
-are requried to run the Groundcontrol Station and simulate Virtual UAVs using the [Ardupilot](http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) Software-in-the-Loop SITL simulator
-
-* The [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-gcs.md)
+Dronology requires three parts: 
 
 * The [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronology.md)
 
+* The [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-gcs.md)
 
-### Scripts: 
+* The dependencies [Python, Dronekit and SITL](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronekitsitl.md).
+These are required to run the ground control station and simulate Virtual UAVs using [Ardupilot's Software-in-the-Loop (SITL) simulator](http://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html).
 
-We provide shell scripts for installing Dronekit and SITL [setup_dronekit.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronekit.sh), installing the 
-Dronology-GCS [setup_dronology_GCS.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronology-GCS.sh), and installing the
-Dronology Core [setup_dronology_core.sh](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/setup_dronology-core.sh) in Linux (tested in Ubuntu 16 and 18)
-
-
-## Deployment Configurations
-Per default Dronology is configured to run on a single machine. If either the Dronology UI and/or the Dronology GCS are supposed to run on a different machine please follow these instructions: [Distributed Setup](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-distributed.md)
-
-
-## Run
-
-[Run Dronology](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/run/dronology.md)
-
-1. Run ```run_dronology.sh``` and ```run_dronology-GCS_ui.sh```  or ```scripts/run_dronology_tmux.sh``` in the scripts folder to start Dronology.
-
-### Scripts: 
-
-We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) which only runs Dronology or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh)  which runs both Dronology and the Groundstation UI  (requires tmux 2.6 or higher) and the 
-Dronology Groundstation [GCS-UI shell script](scripts/run_dronology-GCS_ui.sh), [GCS Runner shell script](http://)
-
-
-
+We provide shell scripts to aid when installing all three parts (scripts were tested in Ubuntu 16.04 and 18.04). 
 
 ## Installation Methods
 
 There are three ways to install Dronology.
 
-* The [Quick Installation Guide](#quick-installation-guide) is well suited for those who want convenience and don't mind the defaults.
+* The [Quick Installation Guide](#quick-installation-guide) is well suited for those who want convenience.
 * The [Custom Installation Guide](#custom-installation-guide) is appropriate for people who want to specify some of the installation details while leveraging our scripts to automate much of the procedure.
-* The [Manual Installation Guide](#manual-installation-guide) is best for those who want to dig into the details as it walks you through every step so you can see exactly what's going on.
+* The [Manual Installation Guide](#manual-installation-guide) is best for those who want to dig into the details.
 
 > Note: the quick and custom methods use setup scripts that automate the manual installation instructions.
 
@@ -57,7 +33,7 @@ curl -o- https://raw.githubusercontent.com/SAREC-Lab/Dronology-Community-Documen
 ```
 Once it completes, you're ready to run Dronology.
 
-> Note this method uses default settings. You can find Dronology and the rest in `$HOME/git`.
+> Note this installs everything to its default location. You can find Dronology and the rest in `$HOME/git`.
 
 
 ### Custom Installation Guide
@@ -99,6 +75,26 @@ You're now ready to run Dronology.
 1. Set up the [Dronology Groundstation - GCS (Python)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-gcs.md)
 1. Set up [Dronology Core (Java)](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-dronology.md)
 
+
+## Deployment Configurations
+By default, Dronology is configured to run on a single machine. If either the Dronology UI and/or the Dronology GCS are supposed to run on a different machine please follow these instructions: [Distributed Setup](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/install/install-distributed.md)
+
+
+## Run
+
+[Run Dronology](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/run/dronology.md)
+
+1. Run ```run_dronology.sh``` and ```run_dronology-GCS_ui.sh```  or ```scripts/run_dronology_tmux.sh``` in the scripts folder to start Dronology.
+
+### Scripts: 
+
+We provide scripts for running Dronogy [shell script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology.sh) which only runs Dronology or [tmux script](https://github.com/SAREC-Lab/Dronology-documentation/blob/master/scripts/run_dronology_tmux.sh)  which runs both Dronology and the Groundstation UI  (requires tmux 2.6 or higher) and the 
+Dronology Groundstation [GCS-UI shell script](scripts/run_dronology-GCS_ui.sh), [GCS Runner shell script](http://)
+
+
+
+
+
 ## Misc
 
 ### Docker Container
@@ -111,7 +107,6 @@ Dronology and GCS code can be found in the /home/uav/git folder.
 To start Dronology execute the run-dronology.sh shell script on the Desktop.
 
 Please contact us for further information on the VM Image and the download link.
-
 
 
 
