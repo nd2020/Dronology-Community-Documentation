@@ -60,6 +60,9 @@ Please check the scripts before running and adapt target installation locations 
 1. run ```mvn clean```  in Dronology folder
 1. run ```mvn install``` in Dronology folder
 1. run ```run_dronology.sh``` and ```run_dronology-GCS_ui.sh```  or ```run_dronology_tmux.sh``` in scripts Folder
+(The GUI for connecting physical UAVs or created simulated ones should appear)
+1. Open your browser with the url: http://localhost:8080/vaadinui/
+If everything is setup correctly UAVs will appear on the map and in the left hand panel within a minute or so.
 
 
 
