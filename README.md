@@ -1,5 +1,6 @@
 # Dronology Documentation
 
+We recommend that you follow the quick installation guide at the end of this page.  For additional information please read the more detailed installation instructions.
 
 ## Installation
 
