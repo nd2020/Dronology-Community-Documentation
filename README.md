@@ -63,7 +63,7 @@ Please check the scripts before running and adapt target installation locations 
 1. check Dronology-GCS/multi_comm/cfg/global_cfg.json.  Update the ardupath to reflect the correct path to ardupilot (e.g., replace UAV with your user name).
 1. Either run ```run_dronology.sh``` and ```run_dronology-GCS_ui.sh``` 
 or ```run_dronology_tmux.sh``` in scripts Folder.  To run the tmux script you'll need to install tmux (apt-get install tmux) first.
-(The GUI for connecting physical UAVs or created simulated ones should appear within about 1 minute.)
+(The GUI for connecting physical UAVs or created simulated ones should appear within about 1 minute.) To test Dronology create one or more virtual drones using the "add virtual drone" button.
 1. Open your browser with the url: http://localhost:8080/vaadinui/
 If everything is setup correctly UAVs will appear on the map and in the left hand panel within about 1 minute.
 
