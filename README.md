@@ -58,8 +58,8 @@ Please check the scripts before running and adapt target installation locations 
 1. run ```setup_dronekit.sh``` in scripts Folder
 1. run ```setup_dronology-GCS.sh``` in scripts Folder
 1. run ```setup_dronology-core.sh``` in scripts Folder
-1. run ```mvn clean```  in Dronology folder
-1. run ```mvn install``` in Dronology folder
+1. run ```mvn clean```  in Dronology-Core folder
+1. run ```mvn install``` in Dronology-Core folder
 1. check Dronology-GCS/multi_comm/cfg/global_cfg.json.  Update the ardupath to reflect the correct path to ardupilot (e.g., replace UAV with your user name).
 1. Either run ```run_dronology.sh``` and ```run_dronology-GCS_ui.sh``` 
 or ```run_dronology_tmux.sh``` in scripts Folder.  To run the tmux script you'll need to install tmux (apt-get install tmux) first.
